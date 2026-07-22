@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Cloud & Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Dev.<span>Portfolio</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Shuja Ahmed</span></h1>
+      <p class="subtitle">Computer Science Student | Cloud & DevOps Enthusiast</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <p>
+        I am a Computer Science student with a passion for building scalable web applications, automation pipelines, and cloud systems. Currently exploring cloud infrastructure, containerization, and modern software engineering practices.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section bg-alt">
+    <h2 class="section-title">Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa-brands fa-aws skill-icon"></i>
+        <h3>AWS & Cloud</h3>
+        <p>S3, EC2, Lambda, VPC, Auto Scaling</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-git-alt skill-icon"></i>
+        <h3>DevOps & CI/CD</h3>
+        <p>Git, GitHub Actions, Linux, Networking</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-code skill-icon"></i>
+        <h3>Development</h3>
+        <p>Python, JavaScript, HTML5/CSS3, SQL</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-header">
+          <i class="fa-solid fa-shield-halved project-icon"></i>
+          <h3>Phishing Detection Extension</h3>
+        </div>
+        <p>A machine learning-powered browser extension designed to detect malicious URLs and phishing threats in real-time.</p>
+        <div class="tags">
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="#" class="project-link">View Code <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-header">
+          <i class="fa-solid fa-cloud-arrow-up project-icon"></i>
+          <h3>AWS S3 Portfolio CI/CD</h3>
+        </div>
+        <p>Automated static web hosting pipeline utilizing GitHub Actions to continuously deploy portfolio updates directly to AWS S3.</p>
+        <div class="tags">
+          <span>AWS S3</span>
+          <span>GitHub Actions</span>
+          <span>YAML</span>
+        </div>
+        <a href="#" class="project-link">View Code <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-alt">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="contact-form" id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Shuja Ahmed. Built for AWS S3 & GitHub Actions Practice.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
