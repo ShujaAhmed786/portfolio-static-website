@@ -20,12 +20,12 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-south-1  # Change to your S3 bucket's AWS region (e.g., us-east-1, eu-west-1)
+          aws-region: ap-south-1
 
       # Step 3: Sync static files to AWS S3
       - name: Sync Files to S3 Bucket
         run: |
-          aws s3 sync . s3://${{ secrets.static-website-shuja }} \
+          aws s3 sync . s3://static-website-shuja \
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*" \
